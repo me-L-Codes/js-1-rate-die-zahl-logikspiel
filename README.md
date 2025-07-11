@@ -2,7 +2,6 @@
 
 #to-do's: 
 - Text unterhalb der Teilprüfugn anpassen (Worum ging es im groben)
-- ggf. Inos, dass die logs unter f12 im Browser zu finden sind? (ne too much ne? sollte man wissen xD => mal gedanken drüber machen)
 
 
 # Teilprüfung 1 – XXXXXXXXXXXXX
