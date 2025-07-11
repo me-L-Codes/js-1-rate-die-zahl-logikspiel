@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rate die Zahl</title>
+    </head>
+    <body>
+        <h1>Spiel: Rate die Zahl</h1>
+        <p>
+            Schau in die Konsole. ;D
+        </p>
+
+        <script defer>
+            const zufallsZahl = Math.floor((Math.random() * 100) + 1);  // Zufallszahl (+1 Verschiebt den Bereich von 0-99 zu 1-100)
+            let nutzerEingabe;  // für die geratene Zahl oder das "exit"
+            
+            console.log('Willkommen beim Spiel "Rate die Zahl"! Ich habe eine Zufallszahl zwischen 1 und 100 generiert. Rate mal welche es ist.');
+            
+            setTimeout(function(){
+                while(nutzerEingabe != zufallsZahl){
+
+                    nutzerEingabe = prompt('Bitte gib eine Zahl zwischen 1 und 100 ein (oder "exit" zum Beenden):');
+                
+                    if (nutzerEingabe.toLowerCase() === "exit") {
+                        console.log('Du hast das Spiel mit "Exit" abgebrochen. Bis zum nächsten Mal!');
+                        break;
+                    }
+                
+                    nutzerEingabe = parseInt(nutzerEingabe);
+                    
+                    if (nutzerEingabe === zufallsZahl){
+                        console.log(`Herzlichen Glückwunsch! Du hast die Zahl ${zufallsZahl} erraten. :D`);
+                        break;
+                    } else if (nutzerEingabe > zufallsZahl)
+                        console.log(`${nutzerEingabe} ist zu hoch! Versuch es mit einer kleineren Zahl.`);
+                    else if (nutzerEingabe < zufallsZahl)
+                        console.log(`${nutzerEingabe} ist zu niedrig! Versuch es mit einer größeren Zahl.`); 
+                }
+            }, 5000); // Verzögerung des Starts um 5 Sekunden (ich hoffe die Zeit reicht auch bei Ihnen aus :)
+
+            // Verzögere den Start um 5 Sekunden (5000 Millisekunden)
+            // Ich verzögere den Start des Spiels, da das 'prompt' beim Laden der Seite sofort aufgerufen wird. 
+            // Ohne Verzögerung würde das Eingabefenster direkt erscheinen, bevor die Seite vollständig geladen ist, 
+            // und das Blockieren der Seite führt dazu, dass der Benutzer das Spiel nicht richtig sehen kann. 
+            // Durch die Verzögerung stelle ich sicher, dass das Spiel vollständig geladen ist, 
+            // bevor der Benutzer zur Eingabe aufgefordert wird.
+            // Da die Eingabe im Skript noch nicht vorkam und ich aktuell noch keine elegantere Lösung gefunden habe, 
+            // verwende ich dieses Vorgehen, um das Problem zu umgehen. :)
+
+        </script>
+    </body>
+</html>
