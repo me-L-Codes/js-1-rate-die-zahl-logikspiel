@@ -1,13 +1,11 @@
 # JS_1
 
-#to-do's: 
-- Text unterhalb der Teilprüfugn anpassen (Worum ging es im groben)
 
 
-# Teilprüfung 1 – XXXXXXXXXXXXX
+# Teilprüfung 1 – Spiel „Rate die Zahl“
 
 Dies ist eine Prüfungsaufgabe aus meiner Weiterbildung zur Webentwicklerin.  
-Ziel war es, XXXXXXXXXXXXXXXXXXXXXXXXXXX
+Ziel war es, grundlegende JavaScript-Kenntnisse zu vertiefen, insbesondere im Umgang mit Variablen, Kontrollstrukturen, Schleifen und Benutzereingaben.
 
 
 ## Aufgabenstellung
