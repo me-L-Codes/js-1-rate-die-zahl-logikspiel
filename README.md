@@ -1,7 +1,3 @@
-# JS_1
-
-
-
 # Teilprüfung 1 – Spiel „Rate die Zahl“
 
 Dies ist eine Prüfungsaufgabe aus meiner Weiterbildung zur Webentwicklerin.  
